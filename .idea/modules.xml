@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HealthModule.iml" filepath="$PROJECT_DIR$/HealthModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fitbitmodule/fitbitmodule.iml" filepath="$PROJECT_DIR$/fitbitmodule/fitbitmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ihealthmodule/ihealthmodule.iml" filepath="$PROJECT_DIR$/ihealthmodule/ihealthmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testmodule/testmodule.iml" filepath="$PROJECT_DIR$/testmodule/testmodule.iml" />
+    </modules>
+  </component>
+</project>

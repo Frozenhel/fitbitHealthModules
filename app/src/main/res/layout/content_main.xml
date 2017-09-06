@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.anext.jiri.healthmodule.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ConnectToFitbit"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/btnConnectIHealth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Connect to IHealth"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/date_picker_start"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="date"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/date_picker_end"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:hint="endDate"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/date_picker_period"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="period"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnGetActivityList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Get Activities"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnLogActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Log Activity"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGetFoodForDay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Get foods"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnLogFood"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Log food"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGetMeals"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Get meals"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnLogMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Log meal"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGetSleep"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Get sleeps"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnLogSleep"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Log sleep"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFatForDay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="fat for day"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnFatForPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="fat for period"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnFatForRange"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="fat for range"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnWeightForDay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="weight for day"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnWeightForPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="weight for period"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnWeightForRange"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="weight for range"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="RESULTS"
+            android:layout_gravity="center_horizontal"
+            android:minLines="10"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+</LinearLayout>
