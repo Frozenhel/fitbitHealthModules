@@ -1,5 +1,8 @@
 package com.anext.ihealthmodule.model;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+
 /**
  * Created by Jiri on 04/08/17.
  */
@@ -27,6 +30,14 @@ public abstract class PaginatedResult {
 
     public String getNextPageUrl() {
         return NextPageUrl;
+    }
+
+    public String getNextPageUrlDecoded(){
+        try {
+            return URLDecoder.decode(NextPageUrl ,"UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            return "";
+        }
     }
 
     public int getPageLength() {

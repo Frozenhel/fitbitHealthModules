@@ -288,8 +288,6 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
     @Override
     public void onClick(final View view) {
-
-
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -380,10 +378,12 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                                         showResult(activities.toString());
                                         break;
                                     case R.id.btnLogActivity:
-                                        //TODO
+                                        List<com.anext.ihealthmodule.model.BloodPressure> bloodPressures = iHealthManager.getDataManager().downloadBloodPressures();
+                                        showResult(bloodPressures.toString());
                                         break;
                                     case R.id.btnGetSleep:
-                                        //TODO
+                                        List<com.anext.ihealthmodule.model.BloodOxygen> bloodOxygens = iHealthManager.getDataManager().downloadBloodOxygen();
+                                        showResult(bloodOxygens.toString());
                                         break;
                                     case R.id.btnLogSleep:
                                         //TODO
